@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Forum Techno - Tienda</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bite Nova</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/html/main.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/html/tienda.html">Catalogo</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Buscar un componente."
+                        aria-label="Search" style="width: 500px;" />
+                    <button type="button" class="btn btn-primary rounded-pill">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid mt-4 mb-4">
+        <div class="row">
+            <aside class="col-12 col-md-3 mt-4">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/html/main.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Catalogo</li>
+                    </ol>
+                </nav>
+                <h5 class="mb-3 mt-4 pt-3 text-center text-md-start">Busqueda avanzada</h5>
+                <div class="card p-3 mb-3">
+                    <label for="search-input" class="form-label fw-bold">Buscar</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar" id="search-input">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.114l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.114-.098zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card p-3 mb-3">
+                    <label for="brand-select" class="form-label fw-bold">Todas las marcas</label>
+                    <select class="form-select" id="brand-select">
+                        <option selected>Ver todas las marcas...</option>
+                        <option value="1">ASUS</option>
+                        <option value="2">Corsair</option>
+                        <option value="3">Cougar</option>
+                    </select>
+                </div>
+
+                <div class="card p-3 mb-3">
+                    <label class="form-label fw-bold">Precio</label>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="input-group me-2">
+                            <span class="input-group-text p-1">USD</span>
+                            <input type="number" class="form-control p-1" value="45" min="0">
+                        </div>
+                        <span class="text-secondary">-</span>
+                        <div class="input-group ms-2">
+                            <input type="number" class="form-control p-1" value="495" min="0">
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+
+            <div class="col-12 col-md-9">
+                <h1 class="mb-4 text-center text-md-start">Componentes de PC</h1>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0 text-secondary">Mostrando 8 resultados</p>
+                    <select class="form-select w-auto" aria-label="Ordenar por">
+                        <option selected>Ordenar por precio: bajo a alto</option>
+                        <option value="1">Ordenar por precio: alto a bajo</option>
+                        <option value="2">Ordenar por: más vendidos</option>
+                    </select>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="/resources/AORUS-GeForce-RTX™-5070-MASTER-12G-01.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-1">TARJETA DE VIDEO AORUS RTX 5070 MASTER 12GB</h5>
+                                <p class="card-text mb-0">Precio Efectivo</p>
+                                <h4 class="mb-3">$924.99</h3>
+                                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="/resources/imagen_2025-10-13_174210466.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-1">TARJETA DE VIDEO ASUS DUAL RTX 5060 8GB OC EDITION</h5>
+                                <p class="card-text mb-0">Precio Efectivo</p>
+                                <h4 class="mb-3">$434.99</h3>
+                                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="/resources/TARJETA DE VIDEO ASUS GAMING RTX 4080 SUPER OC 16GB.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-1">TARJETA DE VIDEO ASUS GAMING RTX 4080 SUPER OC 16GB</h5>
+                                <p class="card-text mb-0">Precio Efectivo</p>
+                                <h4 class="mb-3">$1,299.99</h3>
+                                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="/resources/AMD RYZEN 7 9800X3D 4.7GHZ 8 NÚCLEOS 16 HILOS AM5.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-1">AMD RYZEN 7 9800X3D 4.7GHZ 8 NÚCLEOS 16 HILOS AM5</h5>
+                                <p class="card-text mb-0">Precio Efectivo</p>
+                                <h4 class="mb-3">$694.99</h3>
+                                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="/resources/CASE ARMAGGEDDON AQUARON XTREME L-ATX PINK.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-1">CASE ARMAGGEDDON AQUARON XTREME L-ATX PINK</h5>
+                                <p class="card-text mb-0">Precio Efectivo</p>
+                                <h4 class="mb-3">$119.99</h3>
+                                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="/resources/CASE ANTEC NX500M X4 FANS BLACK.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-1">MAINBOARD ASUS TUF GAMING B850-PLUS WIFI AM5</h5>
+                                <p class="card-text mb-0">Precio Efectivo</p>
+                                <h4 class="mb-3">$339.99</h3>
+                                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="/resources/COOLER ANTEC VORTEX LUM 240ARGB.png" class="card-img-top" alt="...">
+                            <div class="card-body">COOLER ANTEC VORTEX LUM 240ARGB</h5>
+                                <p class="card-text mb-0">Precio Efectivo</p>
+                                <h4 class="mb-3">$99.99</h3>
+                                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="/resources/COOLER POR AIRE COUGAR FORZA 135 DUAL SUPERIOR.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">COOLER POR AIRE COUGAR FORZA 135 DUAL SUPERIOR</h5>
+                                <p class="card-text mb-0">Precio Efectivo</p>
+                                <h4 class="mb-3">$94.99</h3>
+                                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav aria-label="Page navigation example" class="m-auto pt-5">
+                        <ul class="pagination m- 0 p-0">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-dark text-white text-center p-4 mt-0">
+            <p>&copy; 2024 Forum Techno. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
